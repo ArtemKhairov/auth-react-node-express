@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { DivCenter } from "./components/FormLogin"
 
 export default class Secret extends Component {
   constructor() {
@@ -18,10 +19,10 @@ export default class Secret extends Component {
 
   render() {
     return (
-      <div>
+      <DivCenter>
         <h1>Secret</h1>
         <p>{this.state.message}</p>
-    </div>
+      </DivCenter>
     );
   }
 }

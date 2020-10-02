@@ -58,8 +58,12 @@ const Input = styled.input`
   border-radius:10px;
   border:1px solid #00b300;
   &:focus {
-    
+    outline:0!important;
     }
 `;
 
-export  { H1, FormBlock ,Form,FormElement,Input,device,size};
+const DivCenter = styled.div`
+  text-align:center;
+`;
+
+export  { H1, FormBlock ,Form,FormElement,Input,device,size,DivCenter};

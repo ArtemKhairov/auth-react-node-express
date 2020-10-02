@@ -7,14 +7,14 @@ function withAuth(ComponentToProtect) {
       super();
       this.state = {
         loading: true,
-        redirect: true
+        redirect: false
       };
     }
 
     componentDidMount() {
       fetch('/checkToken')
         .then(res => {
-          if (res.status = 200) {
+          if (res.status === 200) {
             this.setState({ loading: false });
           } else {
             const error = new Error(res.error);
